@@ -23,16 +23,7 @@ public class GameActivity extends Activity {
         setContentView(new MainGamePanel(this));
         Log.d(TAG, "View added");
     }
-	protected void onPause() {
-	    super.onPause();
-	    gamePanel.onPause();
-
-	}
-	protected void onResume() {
-	    super.onResume();
-	    gamePanel.onResume();
-	}
-
+	
 	@Override
 	protected void onDestroy() {
 		Log.d(TAG, "Destroying...");

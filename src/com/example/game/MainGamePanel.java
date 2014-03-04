@@ -153,12 +153,5 @@ public class MainGamePanel extends SurfaceView implements
 			canvas.drawText(fps, this.getWidth() - 50, 20, paint);
 		}
 	}
- public void onResume() {
-	 thread.setRunning(true);
-	  thread.start();
-	}
 
-	public void onPause() {
-	    thread.setRunning(false);
-	}
 }
